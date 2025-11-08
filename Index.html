@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARUN - PORTFOLIO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 20px;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px 30px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      white-space: pre-wrap; /* ताकि नया लाइन/स्पेस काम करे */
+    }
+
+    .info-box {
+      text-align: left;
+      margin-top: 25px;
+    }
+
+    .info-box h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    .info-box ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    .info-box ul li::before {
+      content: "› ";
+      color: #00c6ff;
+    }
+
+    .telegram-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00c6ff;
+    }
+
+    .telegram-btn i {
+        margin-right: 8px; /* Icon और Text के बीच स्पेस */
+    }
+
+    .telegram-btn:hover {
+      background: linear-gradient(135deg, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00c6ff;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="card">
+      <img src="file.png" alt="ARUN" class="profile-pic" />
+      <h1>𝐀ʀᴜɴ 𝐎ғғɪᴄɪᴀʟ</h1>
+      
+      <p>💰••••••Welcome to my bio ••••••• 💵</p>
+      
+      <div class="info-box">
+        <h2>My Information</h2>
+        <ul>
+          <li><strong>Telegram Name:</strong> 𝐀ʀᴜɴ 𝐎ғғɪᴄɪᴀʟ 🌟</li>
+          <li><strong>Username:</strong> @Arun_Era 🌟</li>
+          <li><strong>Real Name:</strong> Arun 😘</li>
+          <li><strong>Age:</strong> 15 😅</li>
+          <li><strong>Birthday:</strong> 5TH MAY 20xx 😀</li>
+          <li><strong>City/State:</strong> BHOPAL, MADHYA PRADESH ❤️</li>
+          <li><strong>Caste:</strong> Hindu 🚩</li>
+          <li><strong>Class:</strong> 10th 💀</li>
+          <li><strong>Permanent ID:</strong> (Not listed)</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h2>Goals & Ownership</h2>
+        <ul>
+          <li><strong>My Dream:</strong> RICH 🤑🤑 (😎DILSE TO HU AND BAS PESO SE BANNA HAI 😀)</li>
+          <li><strong>Owner Of:</strong> <a href="https://t.me/+mTUPXXnznUoxMGFk" target="_blank" style="color: #00c6ff; text-decoration: none;">My Main Channel</a></li>
+          <li><strong>Best friend:</strong> You</li>
+        </ul>
+      </div>
+
+      <a href="https://t.me/+mTUPXXnznUoxMGFk" class="telegram-btn" target="_blank">
+        <i class="fab fa-telegram-plane"></i> Join My Channel
+      </a>
+    </div>
+
+    <footer>
+      <p>😌••••••❤️ThanK YoU😀••••••••😀</p>
+      <p>© 2025 𝐀ʀᴜɴ. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
